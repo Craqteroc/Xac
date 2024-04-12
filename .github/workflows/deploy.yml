@@ -16,9 +16,9 @@ jobs:
     
     - uses: hyoo-ru/mam_build@master2
       with:
-        package: 'menu'
+        package: 'xac/menu'
         
     - uses: hyoo-ru/gh-deploy@v4.4.1
       if: github.ref == 'refs/heads/master'
       with:
-        folder: 'menu/-'
+        folder: 'xac/menu/-'
