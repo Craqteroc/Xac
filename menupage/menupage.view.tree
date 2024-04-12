@@ -1,0 +1,86 @@
+$xac_menu_menupage $mol_example_large
+	title \Catalog of pages
+	Content $mol_filler
+	Empty $mol_status
+	sub /
+		<= Calatog $mol_book2_catalog
+			param \mol_book2_catalog
+			menu_title \Каталог
+			Spread_close => Spread_close
+			spreads *
+				item1 <= Item1 $mol_book2_catalog
+					param \mol_book2_catalog_item1
+					menu_title \Первый
+					menu_tools /
+						<= Spread_close
+					Spread_close => Foods_spread_close
+					spreads *
+						pizza <= Pizza $mol_page
+							title \Первый
+							tools / <= Foods_spread_close
+							body / <= Empty
+						hot_dogs <= Hot_dogs $mol_page
+							title \Второй
+							tools / <= Foods_spread_close
+							body / <= Empty
+						fries <= Fries $mol_page
+							title \Третий
+							tools / <= Foods_spread_close
+							body / <= Empty
+				animals <= Animals $mol_book2_catalog
+					param \mol_book2_catalog_demo_animals
+					menu_title \Второй
+					menu_tools /
+						<= Spread_close
+					Spread_close => Animals_spread_close
+					spreads *
+						cats <= Cats $mol_page
+							title \Первый
+							tools / <= Animals_spread_close
+							body / <= Content
+						dogs <= Dogs $mol_page
+							title \Второй
+							tools / <= Animals_spread_close
+							body / <= Content
+						horses <= Horses $mol_page
+							title \Третий
+							tools / <= Animals_spread_close
+							body / <= Content
+						racoons <= Racoons $mol_page
+							title \Четвертый
+							tools / <= Animals_spread_close
+							body / <= Content
+						pigs <= Pigs $mol_page
+							title \Пятый 
+							tools / <= Animals_spread_close
+							body / <= Content
+						rabbits <= Rabbits $mol_page
+							title \Шестой
+							tools / <= Animals_spread_close
+							body / <= Content
+						wolfs <= Wolfs $mol_page
+							title \Седьмой
+							tools / <= Animals_spread_close
+							body / <= Content
+						mice <= Mice $mol_page
+							title \Восьмой
+							tools / <= Animals_spread_close
+							body / <= Content
+						ants <= Ants $mol_page
+							title \Девятый
+							tools / <= Animals_spread_close
+							body / <= Content
+						bugs <= Bugs $mol_page
+							title \Десятый
+							tools / <= Animals_spread_close
+							body / <= Content
+	tags /
+		\app
+		\page
+		\menu
+		\navigation
+		\transition
+		\multipage
+	aspects /
+		\Navigation
+		\Widget/Layout

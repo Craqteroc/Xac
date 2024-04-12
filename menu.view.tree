@@ -1,0 +1,4 @@
+$xac_menu $mol_page
+	body /
+		<= Form $xac_menu_menupage
+		
