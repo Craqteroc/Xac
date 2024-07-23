@@ -4142,6 +4142,9 @@ var $;
         json() {
             return $mol_wire_sync(this.native).json();
         }
+        blob() {
+            return $mol_wire_sync(this.native).blob();
+        }
         buffer() {
             return $mol_wire_sync(this.native).arrayBuffer();
         }
@@ -4161,9 +4164,6 @@ var $;
     __decorate([
         $mol_action
     ], $mol_fetch_response.prototype, "text", null);
-    __decorate([
-        $mol_action
-    ], $mol_fetch_response.prototype, "buffer", null);
     __decorate([
         $mol_action
     ], $mol_fetch_response.prototype, "xml", null);
@@ -4210,6 +4210,9 @@ var $;
         static json(input, init) {
             return this.success(input, init).json();
         }
+        static blob(input, init) {
+            return this.success(input, init).blob();
+        }
         static buffer(input, init) {
             return this.success(input, init).buffer();
         }
@@ -4238,6 +4241,9 @@ var $;
     __decorate([
         $mol_action
     ], $mol_fetch, "json", null);
+    __decorate([
+        $mol_action
+    ], $mol_fetch, "blob", null);
     __decorate([
         $mol_action
     ], $mol_fetch, "buffer", null);
