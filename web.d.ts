@@ -478,6 +478,16 @@ declare namespace $ {
 }
 
 declare namespace $ {
+    class $mol_after_timeout extends $mol_object2 {
+        delay: number;
+        task: () => void;
+        id: any;
+        constructor(delay: number, task: () => void);
+        destructor(): void;
+    }
+}
+
+declare namespace $ {
     type $mol_type_pick<Input, Upper> = Pick<Input, $mol_type_keys_extract<Input, Upper>>;
 }
 
@@ -1048,16 +1058,6 @@ declare namespace $ {
 //# sourceMappingURL=large.view.tree.d.ts.map
 declare namespace $ {
     let $mol_mem_cached: typeof $mol_wire_probe;
-}
-
-declare namespace $ {
-    class $mol_after_timeout extends $mol_object2 {
-        delay: number;
-        task: () => void;
-        id: any;
-        constructor(delay: number, task: () => void);
-        destructor(): void;
-    }
 }
 
 declare namespace $ {
