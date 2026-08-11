@@ -189,6 +189,7 @@
     "$mol_unicode",
     "$mol_link",
     "$mol_state_arg",
+    "$mol_dom_safe",
     "$mol_match",
     "$mol_filler",
     "$mol_array_lottery",
